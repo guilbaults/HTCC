@@ -214,7 +214,7 @@ XrResult APILayer::xrGetSystemProperties(
   while (next) {
     if (next->type == XR_TYPE_SYSTEM_HAND_TRACKING_PROPERTIES_EXT) {
       auto htp = reinterpret_cast<XrSystemHandTrackingPropertiesEXT*>(next);
-      htp->supportsHandTracking = XR_FALSE;
+      //htp->supportsHandTracking = XR_FALSE;
     }
     next = reinterpret_cast<XrBaseOutStructure*>(next->next);
   }
